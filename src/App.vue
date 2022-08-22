@@ -112,6 +112,56 @@ select {
 }
 
 /* -------------------------------------------------------------------------- */
+/*                               UTILITY CLASSESS                             */
+/* -------------------------------------------------------------------------- */
+
+/* General */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-gap, 1rem);
+}
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: min(100% - 2rem, 83.75rem);
+}
+
+.btn {
+    font-size: 1rem;
+    padding-block: .625em;
+    width: 5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* -------------------------------------------------------------------------- */
 /*                                   GLOBAL                                   */
 /* -------------------------------------------------------------------------- */
 body {
