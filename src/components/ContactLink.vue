@@ -1,5 +1,5 @@
 <template>
-    <BaseLink :to="linkUrl">
+    <BaseLink class="contact-link flex" :to="linkUrl">
         <BaseIcon :name="linkIcon" />
         {{ linkName }}
     </BaseLink>
@@ -22,5 +22,10 @@
 </script>
 
 <style lang="scss" scoped>
-
+    .contact-link {
+        align-items: center;
+        color: var(--color-light);
+        font-size: 1.125rem;
+        text-decoration: none;
+    }
 </style>

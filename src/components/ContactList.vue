@@ -1,5 +1,5 @@
 <template>
-    <ul class="list-wrapper">
+    <ul class="list-wrapper flex" role="list">
         <li>
             <ContactLink 
                 linkIcon="phone"
@@ -34,5 +34,7 @@ import ContactLink from '@/components/ContactLink.vue';
 </script>
 
 <style lang="scss" scoped>
-
+    .list-wrapper {
+        align-items: center;
+    }
 </style>
